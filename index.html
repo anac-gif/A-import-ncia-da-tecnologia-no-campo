@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia no Campo - O Futuro do Agronegócio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="sr-only sr-only-focusable">Pular para o conteúdo principal</a>
+
+    <div class="acessibilidade-container" aria-label="Menu de Acessibilidade">
+        <button class="btn-acessibilidade-toggle" id="btn-acc-toggle" aria-expanded="false" aria-controls="menu-acessibilidade" title="Menu de Acessibilidade">
+            <span class="icon">♿</span>
+        </button>
+        <div class="menu-acessibilidade" id="menu-acessibilidade" aria-hidden="true">
+            <button id="btn-aumentar-fonte" title="Aumentar tamanho do texto">Aumentar Fonte (+)</button>
+            <button id="btn-diminuir-fonte" title="Diminuir tamanho do texto">Diminuir Fonte (-)</button>
+            <button id="btn-alternar-tema" title="Alternar entre modo claro e escuro">Modo Escuro / Claro</button>
+            <button id="btn-iniciar-voz" title="Iniciar leitura de voz do conteúdo principal">Ouvir Texto 🔊</button>
+            <button id="btn-parar-voz" title="Parar leitura de voz">Parar Leitura ⏹️</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">AGRO<span class="accent-text">TECH</span></div>
+            <nav class="nav-links">
+                <a href="#importancia">Importância</a>
+                <a href="#galeria">Inovações</a>
+                <a href="#cadastro">Inscrição</a>
+                <a href="#comentarios">Comunidade</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">O Futuro da Agricultura</span>
+            <h1>Inteligência Artificial e Inovação Digital no Campo</h1>
+            <p>Conectando a força da terra ao poder da tecnologia de ponta. Descubra como algoritmos, drones e automação inteligente estão moldando a nova era da produção alimentar global.</p>
+            <a href="#importancia" class="btn-primary">Explorar Inovações</a>
+        </div>
+    </section>
+
+    <main id="conteudo-principal" class="main-container">
+        
+        <section id="importancia" class="secao-texto-principal" aria-labelledby="titulo-importancia">
+            <h2 id="titulo-importancia" class="section-title">A Importância da Tecnologia no Campo</h2>
+            <div class="texto-conteudo">
+                <p>A tecnologia desempenha um papel crucial na evolução do agronegócio e da produção de alimentos. Graças a equipamentos de ponta, métodos de irrigação avançados, uso de drones e softwares de acompanhamento, os agricultores conseguem elevar a quantidade e a qualidade dos produtos colhidos.</p>
+                <p>Adicionalmente, a tecnologia auxilia na diminuição do consumo de água, energia e outros recursos, promovendo uma produção mais amigável ao meio ambiente e financeiramente vantajosa. Acesso a dados confiáveis sobre o tempo, a terra e as lavouras possibilita aos profissionais da terra fazerem choices mais assertivas e seguras.</p>
+                <p>Portanto, a tecnologia impulsiona o avanço do setor rural, simplifica as atividades dos trabalhadores do campo e assegura uma produção alimentar mais eficaz para suprir as demandas da sociedade.</p>
+            </div>
+        </section>
+
+        <section id="galeria" class="secao-galeria" aria-label="Galeria de Inovações Tecnológicas">
+            <div class="galeria-grid">
+                <div class="imagem"> <img src="Foto1.png" alt="Drone de alta tecnologia sobrevoando campo agrícola monitorando a saúde das plantações com sensores de inteligência artificial"> </div>
+                <div class="imagem"> <img src="Foto2.png" alt="Trator autônomo conectado guiado por GPS realizando colheita inteligente com display digital holográfico"> </div>
+                <div class="imagem"> <img src="Foto3.png" alt="Monitoramento de irrigação automatizada em estufa inteligente através de tablet exibindo gráficos e dados analíticos"> </div>
+            </div>
+        </section>
+
+        <div class="interacao-layout-grid">
+            
+            <section id="cadastro" class="secao-formulario" aria-labelledby="titulo-formulario">
+                <div class="form-wrapper">
+                    <h3 id="titulo-formulario">Venha conhecer a importância da tecnologia no campo.</h3>
+                    <p class="form-subtitle">Inscreva-se para receber relatórios exclusivos e novidades do ecossistema de inovação agro digital.</p>
+                    
+                    <form id="form-inscricao" novalidate>
+                        <div class="form-group">
+                            <label for="txt-nome">Nome Completo</label>
+                            <input type="text" id="txt-nome" name="nome" required placeholder="Ex: Maria Silva">
+                            <span class="msg-erro" id="erro-nome" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="txt-email">E-mail Corporativo</label>
+                            <input type="email" id="txt-email" name="email" required placeholder="Ex: maria@agrotech.com">
+                            <span class="msg-erro" id="erro-email" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="txt-cidade">Cidade</label>
+                            <input type="text" id="txt-cidade" name="cidade" required placeholder="Ex: Ribeirão Preto">
+                            <span class="msg-erro" id="erro-cidade" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-row-duplo">
+                            <div class="form-group">
+                                <label for="txt-estado">Estado</label>
+                                <input type="text" id="txt-estado" name="estado" required placeholder="Ex: SP">
+                                <span class="msg-erro" id="erro-estado" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="txt-pais">País</label>
+                                <input type="text" id="txt-pais" name="pais" required placeholder="Ex: Brasil">
+                                <span class="msg-erro" id="erro-pais" aria-live="polite"></span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Realizar Inscrição</button>
+                    </form>
+                    <div id="sucesso-inscricao" class="alert-sucesso" style="display: none;" role="alert">
+                        Inscrição realizada com sucesso! Bem-vindo à revolução no campo.
+                    </div>
+                </div>
+            </section>
+
+            <section id="comentarios" class="secao-comentarios" aria-labelledby="titulo-comentarios">
+                <div class="comentarios-wrapper">
+                    <h3 id="titulo-comentarios">Comunidade AgroTech</h3>
+                    <p class="comentarios-subtitle">Deixe sua opinião, dúvidas ou compartilhe experiências sobre o uso de IA na lavoura.</p>
+                    
+                    <form id="form-comentario">
+                        <div class="form-group">
+                            <label for="txt-comentario" class="sr-only">Escreva seu comentário</label>
+                            <textarea id="txt-comentario" required placeholder="Compartilhe como a tecnologia impactou a sua produção ou o seu dia a dia..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-comentario">Enviar Comentário</button>
+                    </form>
+
+                    <div class="lista-comentarios" id="lista-comentarios" aria-live="polite">
+                        <div class="comentario-item">
+                            <div class="comentario-meta">
+                                <span class="comentario-autor">Carlos Eduardo</span>
+                                <span class="comentario-data">Hoje</span>
+                            </div>
+                            <p class="comentario-texto">Implementamos sensores de umidade baseados em IA na nossa plantação de soja este ano. A economia de água foi de quase 30%! Excelente conteúdo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Consciência e Transformação</h4>
+                <p>A conscientização sobre a importância da tecnologia no campo é essencial para garantir a segurança alimentar das próximas gerações, otimizar recursos naturais limitados e promover a sustentabilidade socioeconômica global. A revolução digital no campo beneficia tanto o produtor rural quanto o consumidor final.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Referências</h4>
+                <ul>
+                    <li><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT (Montagem de conteúdo de IA)</a></li>
+                    <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer">Diretrizes de Acessibilidade Web (WCAG)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AGROTECH. Todos os direitos reservados. Inovação para o campo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
